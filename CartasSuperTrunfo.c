@@ -12,21 +12,21 @@ int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
-    char codigo[10];
-    char nome[50];
-    int populacao;
-    float area;
-    int pontosTuristicos;
-    float pib, superpoder;
+    char codigo[10]; // B14
+    char nome[50]; // PATOS
+    int populacao; // 103
+    float area; // 513
+    int pontosTuristicos; // 10
+    float pib, superpoder; // PIB 109
     float rendapercapita;
     float densidadepopulacional;
 
-    char codigo2[10];
-    char nome2[50];
-    int populacao2;
-    float area2;
-    int pontosTuristicos2;
-    float pib2, superpoder2;
+    char codigo2[10]; // C14
+    char nome2[50]; // CABEDELO
+    int populacao2; // 66
+    float area2; // 33
+    int pontosTuristicos2; // 15
+    float pib2, superpoder2; // PIB 3
     float rendapercapita2;
     float densidadepopulacional2;
 
@@ -139,6 +139,22 @@ int main() {
     printf("PIB per capita: %s venceu\n", (rendapercapita> rendapercapita2) ? "Carta 1" : "Carta 2");
     printf("Densidade populacional: %s venceu\n", (densidadepopulacional < densidadepopulacional2) ? "Carta 1" : "Carta 2");
     printf("Super Poder: %s venceu\n", (superpoder > superpoder2) ? "Carta 1" : "Carta 2");
+
+    printf("Atributo escolhido: População\n");
+
+    if (populacao > populacao2) {
+        printf("Carta 1: Patos venceu!\n");
+    } else {
+        printf("carta 2: Cabedelo venceu!\n");
+    }
+    printf("Atributo escolhido: Densidade populacional\n");
+
+    if(densidadepopulacional < densidadepopulacional2) {
+        printf("Carta 1 venceu!\n");
+    } else {
+        printf("Carta 2 venceu!\n");
+    }
+        
 
     return 0;
 }
